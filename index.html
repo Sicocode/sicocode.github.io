@@ -2,11 +2,52 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sico Product</title>
+    <title>SICO Services</title>
+    <style>
+        /* Hintergrund und Textzentrierung */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Blinking Effekt */
+        @keyframes blink {
+            0%, 50%, 100% { opacity: 1; }
+            25%, 75% { opacity: 0; }
+        }
+
+        .blink {
+            color: #001f4d; /* dunkles Blau */
+            font-size: 3rem;
+            font-weight: bold;
+            animation: blink 1s infinite;
+            margin: 20px 0;
+        }
+
+        .handle {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .intro {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+    </style>
 </head>
 <body>
-    <p>Dies ist ein Produkt von Sico</p>
+    <div class="intro">Das ist ein Produkt von</div>
+    <div class="blink">SICO SERVICES</div>
+    <div class="handle">@sico299_2</div>
 </body>
 </html>
